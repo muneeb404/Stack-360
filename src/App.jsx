@@ -18,8 +18,8 @@ function App() {
         <Navbar/>
         <Hero/>
         <HeroLogo/>
-        <Services />
-        {/* <MultiSlider/> */}
+        {/* <Services /> */}
+        <MultiSlider/>
         <TechStack/>
         <Success/>
         {/* <FAQ/> */}

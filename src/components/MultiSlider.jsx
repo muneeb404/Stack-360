@@ -1,11 +1,11 @@
 import React from "react";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
 import rightArrow from "../assets/rightArrow.svg";
 import servicePic1 from "../assets/servicePic1.svg";
 import servicePic2 from "../assets/servicePic2.svg";
 import servicePic3 from "../assets/servicePic3.svg";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-// import renderButtonGroupOutside from 'react-multi-carousel'
 
 function MultiSlider() {
   const responsive = {
@@ -26,18 +26,19 @@ function MultiSlider() {
     },
   };
   return (
-    <div className="bg-[#191818] text-white h-screen  ">
-      <h1 className="text-[40px] font-bold text-center py-8">
+    <div className="bg-[#191818] text-white px-20 py-16 pb-20">
+      <h1 className="text-[40px] font-bold text-center pb-5">
         Services We Offer
       </h1>
-      <div className="flex gap-4 justify-center">
+      {/* <div className="flex gap-4 justify-center"> */}
         <Carousel
           swipeable={false}
           draggable={false}
-          showDots={false}
+          showDots={true}
           responsive={responsive}
           ssr={true} // means to render carousel on server-side.
           infinite={true}
+          
           autoPlaySpeed={1000}
           keyBoardControl={true}
           customTransition="all .5"
@@ -47,8 +48,8 @@ function MultiSlider() {
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-40-px"
         >
-            <div
-            className=" text-left rounded-2xl px-7 w-[415px] pt-8 h-[400px] overflow-hidde bg-gradient-to-br from-white/10 to-white/40 border backdrop-blur-[42px] shadow-inner"
+          <div
+            className=" text-left rounded-2xl px-7 w-[380px] pt-8 h-[400px] overflow-hidde bg-gradient-to-br from-white/10 to-white/40 border backdrop-blur-[42px] shadow-inner"
             style={{
                 boxShadow: "inset -5px -5px 250px rgba(255, 255, 255, 0.02)",
             }}
@@ -74,7 +75,7 @@ function MultiSlider() {
             </div>
 
             <div
-                className=" text-left rounded-2xl px-7 w-[415px] pt-8 h-[400px] bg-gradient-to-br from-white/10 to-white/40 border backdrop-blur-[42px] shadow-inner"
+                className=" text-left rounded-2xl px-7 w-[380px] pt-8 h-[400px] bg-gradient-to-br from-white/10 to-white/40 border backdrop-blur-[42px] shadow-inner"
                 style={{
                     boxShadow: "inset -5px -5px 250px rgba(255, 255, 255, 0.02)",
                 }}
@@ -97,7 +98,7 @@ function MultiSlider() {
             </div>
 
             <div
-            className=" text-left rounded-2xl px-7 w-[415px] pt-8 h-[400px]  bg-gradient-to-br from-white/10 to-white/40 border backdrop-blur-[42px] shadow-inner"
+            className=" text-left rounded-2xl px-7 w-[380px] pt-8 h-[400px]  bg-gradient-to-br from-white/10 to-white/40 border backdrop-blur-[42px] shadow-inner"
             style={{
                 boxShadow: "inset -5px -5px 250px rgba(255, 255, 255, 0.02)",
             }}
@@ -125,7 +126,7 @@ function MultiSlider() {
             </div>
 
             <div
-            className=" text-left rounded-2xl px-7 w-[415px] pt-8 h-[400px]  bg-gradient-to-br from-white/10 to-white/40 border backdrop-blur-[42px] shadow-inner"
+            className=" text-left rounded-2xl px-7 w-[380px] pt-8 h-[400px]  bg-gradient-to-br from-white/10 to-white/40 border backdrop-blur-[42px] shadow-inner"
             style={{
                 boxShadow: "inset -5px -5px 250px rgba(255, 255, 255, 0.02)",
             }}
@@ -153,7 +154,7 @@ function MultiSlider() {
             </div>
 
         </Carousel>
-      </div>
+      {/* </div> */}
     </div>
   );
 }

@@ -18,7 +18,7 @@ import tech12 from '../assets/tech12.svg'
 function TechStack() {
   return (
     <div>
-        <div className='w-full bg-white h-screen flex flex-col px-20 items-center justify-center'>
+        <div className='w-full bg-white py-24 flex flex-col px-20 items-center justify-center'>
             <h1 className='text-[40px] poppins font-bold mt- mb-6'>Yes, We Support Your Entire <span className='text-[#E47725]'>Tech Stack</span></h1>
             <div className='flex gap-8'>
                 <div className='flex flex-col items-center cursor-pointer'>

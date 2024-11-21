@@ -10,7 +10,7 @@ import success8 from '../assets/success8.svg'
 
 function Success() {
   return (
-    <div className='w-full px-20 h-screen bg-[#E47725] text-white'>
+    <div className='w-full px-20 py-24 bg-[#E47725] text-white'>
         <h1 className='text-[40px] poppins text-center font-bold py-4 pt-8'>Our Success Stories</h1>
         <div className='bg-[#EEEDED33] border border-white rounded-xl flex py-10'>
             <div className='w-[50%] flex flex-col items-center gap-1'>
