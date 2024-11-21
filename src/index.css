@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.poppins{
+    font-family: 'Poppins', sans-serif;
+}
+.rajdhani{
+    font-family: 'Rajdhani', sans-serif;
+}
+/* .swiper-pagination{
+    position: absolute !important;
+    bottom: -20px !important;
+    z-index: 99 !important;
+} */
