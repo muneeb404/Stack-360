@@ -14,3 +14,13 @@
 .colorr:hover {
     filter: invert(46%) sepia(73%) saturate(1394%) hue-rotate(354deg) brightness(102%) contrast(79%);
 }   
+.carousel-container{
+    display: flex;
+}
+.react-multi-carousel-dot-list{
+    bottom: 30px !important;
+    z-index: 11;
+}
+.react-multi-carousel-dot--active button {
+    background:#E47725 !important;
+}
