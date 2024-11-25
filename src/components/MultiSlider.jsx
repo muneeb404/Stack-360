@@ -15,17 +15,17 @@ import { CustomButtonGroup } from "./CustomButtonGroup";
 function MultiSlider() {
   const responsive = {
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+      breakpoint: { max: 3000, min: 1330 },
       items: 3,
       slidesToSlide: 1, // optional, default to 1.
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 1330, min: 945 },
       items: 2,
       slidesToSlide: 1, // optional, default to 1.
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 945, min: 0 },
       items: 1,
       slidesToSlide: 1, // optional, default to 1.
     },
@@ -76,8 +76,8 @@ function MultiSlider() {
       </h1>
       {/* <div className="flex gap-4 justify-center"> */}
         <Carousel
-          swipeable={false}
-          draggable={false}
+          swipeable={true}
+          draggable={true}
           showDots={true}
           arrows={false}
           responsive={responsive}
@@ -98,7 +98,7 @@ function MultiSlider() {
           renderDotsOutside={renderButtonGroupOutside}
         >
           <div
-            className="mx-auto text-left rounded-2xl px-7 w-[380px] pt-8 h-[400px]  bg-gradient-to-br from-white/10 to-white/40 border backdrop-blur-[42px] shadow-inner"
+            className="mx-auto text-left rounded-2xl px-7 w-96 pt-8 h-[25rem] bg-gradient-to-br from-white/10 to-white/40 border backdrop-blur-[42px] shadow-inner"
             style={{
                 boxShadow: "inset -5px -5px 250px rgba(255, 255, 255, 0.02)",
             }}
@@ -124,7 +124,7 @@ function MultiSlider() {
             </div>
 
             <div
-                className="mx-auto text-left rounded-2xl px-7 w-[380px] pt-8 h-[400px] bg-gradient-to-br from-white/10 to-white/40 border backdrop-blur-[42px] shadow-inner"
+                className="mx-auto text-left rounded-2xl px-7 w-96 pt-8 h-[25rem] bg-gradient-to-br from-white/10 to-white/40 border backdrop-blur-[42px] shadow-inner mobile:max-tablet:"
                 style={{
                     boxShadow: "inset -5px -5px 250px rgba(255, 255, 255, 0.02)",
                 }}

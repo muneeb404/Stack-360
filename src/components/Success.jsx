@@ -10,13 +10,16 @@ import success8 from '../assets/success8.svg'
 
 function Success() {
   return (
-    <div className='w-full px-20 py-24 bg-[#E47725] text-white'>
+    <div className='w-full px-20 py-24 bg-[#E47725] text-white 
+    mobile:max-tablet:px-10'>
         <h1 className='text-[40px] poppins text-center font-bold py-4 pt-8'>Our Success Stories</h1>
-        <div className='bg-[#EEEDED33] border border-white rounded-xl flex py-10'>
-            <div className='w-[50%] flex flex-col items-center gap-1'>
+        <div className='bg-[#EEEDED33] border border-white rounded-xl flex py-10
+        mobile:max-laptop:flex-wrap'>
+            <div className='w-[50%] flex flex-col items-center gap-1
+            mobile:max-laptop:w-full'>
                 <img className='w-[138px]' src={success1} alt="" />
                 <img className='w-[420px]' src={success2} alt="" />
-                <div className='flex gap-3'>
+                <div className='flex px-4 justify-center gap-3 mobile:max-lgmobile:flex-wrap'>
                     <div className='bg-white rounded-lg w-[48px] h-[48px] flex justify-center items-center'>
                         <img src={success3} alt="" />
                     </div>
@@ -34,7 +37,8 @@ function Success() {
                     </div>
                 </div>
             </div>
-            <div className='w-[50%] poppins flex flex-col gap-10'>
+            <div className='w-[50%] poppins flex flex-col gap-10
+            mobile:max-laptop:w-full mobile:max-laptop:px-4 mobile:max-laptop:mt-8'>
                 <div className=''>
                     <h1 className='text-[28px] pb-2 font-semibold'>About Autobuffy</h1>
                     <p className='text-[16px font-medium]'>Autobuffy was created to make it easier to find affordable, high quality auto parts using modern technology in the USA.</p>

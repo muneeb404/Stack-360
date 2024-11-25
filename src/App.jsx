@@ -23,8 +23,8 @@ function App() {
         <TechStack/>
         <Success/>
         {/* <FAQ/> */}
-        <CTA/>
-        <Footer/>
+        {/* <CTA/> */}
+        {/* <Footer/> */}
       </div>
     </>
   )

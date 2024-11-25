@@ -8,18 +8,19 @@ import TechStackLogo from './TechStackLogo'
 function TechStack() {
   return (
     <div>
-        <div className='w-full bg-white py-24 flex flex-col px-20 items-center justify-center'>
-            <h1 className='text-[40px] poppins font-bold mt- mb-6'>Yes, We Support Your Entire <span className='text-[#E47725]'>Tech Stack</span></h1>
-            <div className='flex gap-8'>
-                <div className='flex flex-col items-center cursor-pointer'>
+        <div className='w-full bg-white py-24 flex flex-col px-20 items-center justify-center 
+        mobile:max-tablet:px-10'>
+            <h1 className='text-[2.5rem] text-center poppins font-bold mt- mb-6'>Yes, We Support Your Entire <span className='text-[#E47725]'>Tech Stack</span></h1>
+            <div className='flex gap-8 mobile:max-tablet:flex-wrap mobile:max-tablet:justify-center'>
+                <div className='flex flex-col items-center cursor-pointer mobile:max-tablet:flex-wrap mobile:max-tablet:flex-row mobile:max-tablet:gap-5'>
                     <img src={stackCategory1} alt="" />
                     <div className='border-b-2 poppins text-[16px] font-medium py-2 border-b-[#E47725]'>Technologies</div>
                 </div>
-                <div className='flex flex-col items-center cursor-pointer'>
+                <div className='flex flex-col items-center cursor-pointer mobile:max-tablet:flex-wrap mobile:max-tablet:flex-row mobile:max-tablet:gap-5'>
                     <img src={stackCategory2} alt="h" />
                     <div className='border-b-2 poppins text-[16px] font-medium py-2 border-b-transparent '>Cloud Infrastructure</div>
                 </div>
-                <div className='flex flex-col items-center cursor-pointer'>
+                <div className='flex flex-col items-center cursor-pointer mobile:max-tablet:flex-wrap mobile:max-tablet:flex-row mobile:max-tablet:gap-5'>
                     <img src={stackCategory3} alt="" />
                     <div className='border-b-2 poppins text-[16px] font-medium py-2 border-b-transparent'>Devops</div>
                 </div>

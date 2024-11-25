@@ -8,7 +8,8 @@ import dotLine from "../assets/dotLine.svg";
 
 function HeroLogo() {
   return (
-    <div className="w-full relative h-[92px] my-8 bg-white flex justify-center items-center">
+    <div className="w-full relative h-[92px] my-8 bg-white flex justify-center items-center 
+    mobile:max-tablet:hidden">
       <div className="absolute">
         <img src={dotLine} alt="" />
       </div>
