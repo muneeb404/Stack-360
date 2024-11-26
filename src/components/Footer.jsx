@@ -10,7 +10,7 @@ import linkedin from '../assets/linkedin.svg'
 
 function Footer() {
   return (
-    <div className='bg-white px-20'>
+    <div className='bg-white px-20 mobile:max-lgmobile:px-10'>
         <div className='bg-white w-full py-16 border-b-2 border-[#DCDCDC] poppins flex justify-between
         mobile:max-laptop:flex-wrap mobile:max-laptop:pb-0'>
             <div className=' flex flex-col gap-3 mb-8'>
@@ -30,7 +30,7 @@ function Footer() {
                 </div>
             </div>
 
-            <div className='mb-8'>
+            <div className='mb-8 mobile:max-lgmobile:pr-24'>
                 <h1 className='text-[16px] font-semibold mb-5'>Services</h1>
                 <ul className='flex flex-col gap-1.5 text-[14px] font-light cursor-pointer'>
                     <li>Web Development</li>
@@ -40,7 +40,7 @@ function Footer() {
                 </ul>
             </div>
 
-            <div className='mb-8'>
+            <div className='mb-8 mobile:max-lgmobile:pr-24'>
                 <h1 className='text-[16px] font-semibold mb-5'>Company</h1>
                 <ul className='flex flex-col gap-1.5 text-[14px] font-light'>
                     <li>About Us</li>
