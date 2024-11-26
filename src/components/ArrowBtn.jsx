@@ -1,6 +1,8 @@
 export const ArrowButton = ({ direction, onClick, icon }) => {
     return (
       <button
+      className="mobile:hidden
+      tablet:block"
         onClick={onClick}
         style={{
           position: "absolute",

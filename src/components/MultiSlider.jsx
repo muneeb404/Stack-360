@@ -8,7 +8,6 @@ import leftArrow from "../assets/leftArrow.svg";
 import servicePic1 from "../assets/servicePic1.svg";
 import servicePic2 from "../assets/servicePic2.svg";
 import servicePic3 from "../assets/servicePic3.svg";
-// import ArrowBtn from "./ArrowBtn";
 import { CustomButtonGroup } from "./CustomButtonGroup";
 
 
@@ -31,50 +30,11 @@ function MultiSlider() {
     },
   };
 
-  const CustomRightArrow = ({ onClick }) => {
     return (
-      <button
-        onClick={onClick}
-        style={{
-          position: "absolute",
-          right: "2rem",
-          top: "50%",
-          transform: "translateY(-50%)",
-          background: "transparent",
-          border: "none",
-          cursor: "pointer",
-          zIndex: 1,
-        }}
-      >
-        <img className="w-[29px]" src={rightArrow} alt="" />
-      </button>
-    );
-  };
-  const CustomLeftArrow = ({ onClick }) => {
-    return (
-      <button
-        onClick={onClick}
-        style={{
-          position: "absolute",
-          left: "2rem",
-          top: "50%",
-          transform: "translateY(-50%)",
-          background: "transparent",
-          border: "none",
-          cursor: "pointer",
-          zIndex: 1,
-        }}
-      >
-        <img className="w-[29px]" src={leftArrow} alt="" />
-      </button>
-    );
-  };
-  return (
-    <div className="bg-[#191818] relative text-white px-20 py-16 pb-20">
+    <div className="bg-[#191818] relative text-white px-20 py-16 pb-20 mobile:max-lgmobile:px-3">
       <h1 className="text-[40px] font-bold text-center pb-10">
         Services We Offer
       </h1>
-      {/* <div className="flex gap-4 justify-center"> */}
         <Carousel
           swipeable={true}
           draggable={true}
@@ -91,14 +51,13 @@ function MultiSlider() {
           removeArrowOnDeviceType={["tablet", "mobile"]}
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-40-px"
-          customRightArrow={<CustomRightArrow />}
-          customLeftArrow={<CustomLeftArrow />}
           renderButtonGroupOutside={true}
           customButtonGroup={<CustomButtonGroup/>}
           renderDotsOutside={renderButtonGroupOutside}
         >
           <div
-            className="mx-auto text-left rounded-2xl px-7 w-96 pt-8 h-[25rem] bg-gradient-to-br from-white/10 to-white/40 border backdrop-blur-[42px] shadow-inner"
+            className="mx-auto text-left rounded-2xl px-7 w-96 pt-8 h-[25rem] bg-gradient-to-br from-white/10 to-white/40 border backdrop-blur-[42px] shadow-inner
+            mobile:max-lgmobile:w-80 "
             style={{
                 boxShadow: "inset -5px -5px 250px rgba(255, 255, 255, 0.02)",
             }}
@@ -124,7 +83,7 @@ function MultiSlider() {
             </div>
 
             <div
-                className="mx-auto text-left rounded-2xl px-7 w-96 pt-8 h-[25rem] bg-gradient-to-br from-white/10 to-white/40 border backdrop-blur-[42px] shadow-inner mobile:max-tablet:"
+                className="mx-auto text-left rounded-2xl px-7 w-96 pt-8 h-[25rem] bg-gradient-to-br from-white/10 to-white/40 border backdrop-blur-[42px] shadow-inner mobile:max-lgmobile:w-80"
                 style={{
                     boxShadow: "inset -5px -5px 250px rgba(255, 255, 255, 0.02)",
                 }}
@@ -147,7 +106,7 @@ function MultiSlider() {
             </div>
 
             <div
-            className="mx-auto text-left rounded-2xl px-7 w-[380px] pt-8 h-[400px]  bg-gradient-to-br from-white/10 to-white/40 border backdrop-blur-[42px] shadow-inner"
+            className="mx-auto text-left rounded-2xl px-7 w-[380px] pt-8 h-[400px]  bg-gradient-to-br from-white/10 to-white/40 border backdrop-blur-[42px] shadow-inner mobile:max-lgmobile:w-80 "
             style={{
                 boxShadow: "inset -5px -5px 250px rgba(255, 255, 255, 0.02)",
             }}
@@ -175,7 +134,7 @@ function MultiSlider() {
             </div>
 
             <div
-            className="mx-auto text-left rounded-2xl px-7 w-[380px] pt-8 h-[400px]  bg-gradient-to-br from-white/10 to-white/40 border backdrop-blur-[42px] shadow-inner"
+            className="mx-auto text-left rounded-2xl px-7 w-[380px] pt-8 h-[400px]  bg-gradient-to-br from-white/10 to-white/40 border backdrop-blur-[42px] shadow-inner mobile:max-lgmobile:w-80 "
             style={{
                 boxShadow: "inset -5px -5px 250px rgba(255, 255, 255, 0.02)",
             }}
@@ -200,7 +159,7 @@ function MultiSlider() {
             </div>
 
             <div
-            className="mx-auto text-left rounded-2xl px-7 w-[380px] pt-8 h-[400px]  bg-gradient-to-br from-white/10 to-white/40 border backdrop-blur-[42px] shadow-inner"
+            className="mx-auto text-left rounded-2xl px-7 w-[380px] pt-8 h-[400px]  bg-gradient-to-br from-white/10 to-white/40 border backdrop-blur-[42px] shadow-inner mobile:max-lgmobile:w-80"
             style={{
                 boxShadow: "inset -5px -5px 250px rgba(255, 255, 255, 0.02)",
             }}
@@ -225,7 +184,6 @@ function MultiSlider() {
             </div>
 
         </Carousel>
-      {/* </div> */}
     </div>
   );
 }

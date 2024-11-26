@@ -13,7 +13,7 @@ function Hero() {
 
             <button className='bg-[#E47725] text-white px-6 py-3 text-[20px] rajdhani font-semibold rounded-md border-none outline-none'>Let's chat</button>
         </div>
-        <div className='mobile:max-laptop:mx-auto' >
+        <div className='mobile:max-laptop:mx-auto mobile:max-laptop:mb-8' >
             <img className='w-[28rem]' src={heroImg} alt="" />
         </div>
     </div>
